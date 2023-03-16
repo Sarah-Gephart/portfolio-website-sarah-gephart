@@ -1,0 +1,184 @@
+body {
+    font-size: 16px;
+    font-family: "poppins";
+    font-weight: 400;
+}
+
+
+
+/* NAVBAR */
+
+.navbar-brand img {
+    width: 200px;
+}
+
+.topnav {
+    background-color: white;
+    overflow: hidden;
+    display: flex;
+    justify-content: flex-end;
+    padding: 78px 50px;
+    list-style-type: none;
+  }
+  
+  .topnav a {
+   
+    color: #998E8E;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    font-family: 'poppins';
+    font-weight: 500;
+  }
+  
+  .topnav a:hover {
+    background-color: #F45757;
+    color: white;
+    border-radius: 100px;
+  }
+  
+  .topnav a.active {
+    background-color: #F45757;
+    color: white;
+    border-radius: 100px;
+  }
+
+
+/* MAIN HERO */
+
+  .main-hero {
+    background-color: #FFEDED;
+    height: 609px;
+  }
+
+  /* Sarah Gephart */
+
+h2 {
+/* position: absolute; */
+width: 318px;
+height: 40px;
+left: 87px;
+top: 273px;
+
+font-family: 'Josefin Sans';
+font-style: normal;
+font-weight: 600;
+font-size: 40px;
+line-height: 40px;
+/* identical to box height */
+letter-spacing: 0.09em;
+
+color: #000000;
+}
+
+/* UX/UI | LOGO DESIGN | CHARACTER ILLUSTRATOR */
+
+#position {
+font-family: 'Josefin Sans';
+font-style: normal;
+font-weight: 700;
+font-size: 18px;
+line-height: 18px;
+letter-spacing: 0.09em;
+}
+
+/* GRAPHIC DESIGNER */
+
+.title {
+/* position: absolute;
+width: 536px;
+height: 180px;
+left: 86px;
+top: 357px; */
+
+font-family: 'Josefin Sans';
+font-style: normal;
+font-weight: 700;
+font-size: 90px;
+line-height: 90px;
+letter-spacing: 0.09em;
+color: #F45757;
+}
+
+/* hero-image */
+
+.hero-image img {
+/* width: auto;
+height: 457px;
+left: 695px;
+top: 241px;
+padding: 25px; */
+}
+
+/* PROJECTS */
+
+.content-wrapper {
+    padding: 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.header {
+    display: flex;
+    margin: 25px;
+}
+
+.cards {
+    display: flex;
+    flex-direction: row;
+    border: none;
+    
+    
+}
+
+
+.catproject img {
+
+background: url(Catproject.jpg);
+border-radius: 10%;
+}
+
+.girl img {
+background: url(Hogwartsproject.jpg);
+border-radius: 10%;
+}
+
+.epictobias img {
+background: url(Tobiasproject.jpg);
+border-radius: 10%;
+}
+
+
+h3 {
+
+text-decoration: none;
+font-family: 'Josefin Sans';
+color: #000000;
+}
+
+.button {
+    
+    transition-duration: 0.4s;
+    font-family: 'poppins';
+    font-weight: 700;
+    background-color: #60C9C3;
+    border: none;
+    color: white;
+    padding: 17px 108px;
+    text-decoration: none;
+    border-radius: 40px;
+    margin: 25px;
+}
+
+.button:hover {
+    background-color: #22615e;
+}
+
+.about {
+    padding: 5%;
+    width: fit-content;
+    height: fit-content;
+    background-color: #FFEDED;
+}
