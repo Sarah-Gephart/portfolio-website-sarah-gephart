@@ -4,6 +4,10 @@ body {
     font-weight: 400;
 }
 
+main {
+  width: 1900px;
+}
+
 
 
 /* NAVBAR */
@@ -101,23 +105,14 @@ letter-spacing: 0.09em;
 color: #F45757;
 }
 
-/* hero-image */
-
-.hero-image img {
-/* width: auto;
-height: 457px;
-left: 695px;
-top: 241px;
-padding: 25px; */
-}
-
 /* PROJECTS */
 
-.content-wrapper {
+.projects .content-wrapper {
     padding: 5%;
     display: flex;
     flex-direction: column;
     align-items: center;
+    
 }
 
 .header {
@@ -129,6 +124,7 @@ padding: 25px; */
     display: flex;
     flex-direction: row;
     border: none;
+    
     
     
 }
@@ -150,12 +146,11 @@ background: url(Tobiasproject.jpg);
 border-radius: 10%;
 }
 
-
-h3 {
-
-text-decoration: none;
-font-family: 'Josefin Sans';
-color: #000000;
+a {
+  font-family: 'Josefin Sans';
+  text-decoration: none;
+  color: #000000;
+  
 }
 
 .button {
@@ -181,4 +176,52 @@ color: #000000;
     width: fit-content;
     height: fit-content;
     background-color: #FFEDED;
+}
+
+.services .content-wrapper {
+  padding: 5%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contact {
+  display: flex;
+  background-color: #FFEDED;
+  height: 609px;
+}
+
+.contact .content-wrapper {
+  display: flex;
+  width: 100%;
+  margin: 0px;
+}
+
+.containerpink {
+  display: flex;
+  flex-direction: row;
+  background-color: #F45757;
+  height: 609px;
+  width: 30%;
+  border-radius: 0px 40px 40px 0px;
+}
+
+
+.containerwhite {
+  float: right;
+  background-color: #9a3d3d;
+  height: 400px;
+  width: 700%;
+  border-radius: 40px 0px 0px 40px;
+  margin: auto;
+}
+
+#footer {
+  display: flex;
+  background-color: #F8A1A1;
+}
+
+#footer .content-wrapper {
+  height: 400px;
+  justify-content: center;
 }
