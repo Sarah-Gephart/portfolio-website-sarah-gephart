@@ -251,6 +251,25 @@ a {
     background-color: #22615e;
 }
 
+.buttoninfo {
+    
+  transition-duration: 0.4s;
+  font-family: 'poppins';
+  font-weight: 700;
+  background-color: #60C9C3;
+  border: none;
+  color: white;
+  padding: 17px 108px;
+  text-decoration: none;
+  border-radius: 40px;
+  margin: 25px;
+  text-align: center;
+}
+
+.buttoninfo:hover {
+  background-color: #22615e;
+}
+
 .about {
     padding: 6%;
     width: auto;
@@ -283,7 +302,7 @@ a {
 }
 
 .contact {
-  display: flex;
+  position: relative;
   background-color: #FFEDED;
   height: 609px;
 }
@@ -304,13 +323,17 @@ a {
 
 .containerwhite {
   position: absolute;
-  margin: 95px;
+  margin: 95px 200px;
   right: -50;
-  background-color: #9a3d3d;
+  background-color: #ffffff;
   height: 400px;
   width: 700%;
   border-radius: 40px 0px 0px 40px;
   /* margin: auto; */
+}
+
+.contactinfo {
+  margin: 50px;
 }
 
 #footer {
