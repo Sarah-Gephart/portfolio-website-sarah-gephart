@@ -8,6 +8,39 @@ main {
   width: 1900px;
 }
 
+@media screen and (max-width: 600px) {
+  body {
+    
+  }
+} 
+
+
+.collapsible {
+  background-color: #eee;
+  color: #60C9C3;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  outline: none;
+  font-size: 15px;
+  
+}
+
+.active, .collapsible:hover {
+  background-color: #ccc;
+  height: fit-content;
+  width: fit-content;
+}
+
+.topnav {
+  background-color: #FFEDED;
+  overflow: hidden;
+  padding: 0 18px;
+  display: none;
+  
+}
+
 
 
 /* NAVBAR */
@@ -16,7 +49,56 @@ main {
     width: 200px;
 }
 
-.topnav {
+input{
+
+  display:none;
+
+}
+
+input:checked ~ label span:last-child{
+
+  display:none;
+
+}
+
+input:not(:checked) ~ label span:first-child{
+
+ display:none;
+
+}
+
+.topnav{
+  overflow:hidden;
+}
+
+ul{
+
+  overflow:hidden;
+
+  width:0;
+
+  height:0;
+
+  padding:0;
+
+  margin:0;
+
+  transition:width 0.5s, height 0.5s;
+
+  list-style:none;
+
+}
+
+input:checked ~ ul{
+
+  width:200px;
+
+  height:90px;
+
+}
+
+
+/* .topnav {
     background-color: white;
     overflow: hidden;
     display: flex;
@@ -46,34 +128,29 @@ main {
     background-color: #F45757;
     color: white;
     border-radius: 100px;
-  }
+  } */
 
 
 /* MAIN HERO */
 
   .main-hero {
     background-color: #FFEDED;
+    background: fill;
     height: 609px;
+    padding: 75px;
   }
 
   /* Sarah Gephart */
 
 h2 {
 /* position: absolute; */
-width: 318px;
-height: 40px;
-left: 87px;
-top: 273px;
-
 font-family: 'Josefin Sans';
 font-style: normal;
 font-weight: 600;
 font-size: 40px;
 line-height: 40px;
-/* identical to box height */
 letter-spacing: 0.09em;
-
-color: #000000;
+color: #F45757;
 }
 
 /* UX/UI | LOGO DESIGN | CHARACTER ILLUSTRATOR */
@@ -102,7 +179,14 @@ font-weight: 700;
 font-size: 90px;
 line-height: 90px;
 letter-spacing: 0.09em;
+width: 180px;
 color: #F45757;
+}
+
+.hero-image img {
+  float: right;
+  width: 686px;
+  height: 457px;
 }
 
 /* PROJECTS */
@@ -111,7 +195,7 @@ color: #F45757;
     padding: 5%;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    justify-content: center;
     
 }
 
@@ -123,12 +207,8 @@ color: #F45757;
 .cards {
     display: flex;
     flex-direction: row;
-    border: none;
-    
-    
-    
+    border: none;  
 }
-
 
 .catproject img {
 
@@ -172,10 +252,27 @@ a {
 }
 
 .about {
-    padding: 5%;
-    width: fit-content;
-    height: fit-content;
+    padding: 6%;
+    width: auto;
+    height: 609px;
     background-color: #FFEDED;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+  
+
+.about-bio {
+  
+  width: 250px;
+    
+}
+
+.carousel {
+  align-self: flex-end;
+  align-content: center;
+  width: 300px;
 }
 
 .services .content-wrapper {
@@ -217,11 +314,13 @@ a {
 }
 
 #footer {
-  display: flex;
+  min-width: 2000px;
   background-color: #F8A1A1;
 }
 
 #footer .content-wrapper {
   height: 400px;
   justify-content: center;
+  text-align: center;
+  padding: 6%;
 }
