@@ -289,14 +289,12 @@ a {
 }
 
 .contact .content-wrapper {
-  display: flex;
   width: 100%;
   margin: 0px;
 }
 
 .containerpink {
-  display: flex;
-  flex-direction: row;
+  position: relative;
   background-color: #F45757;
   height: 609px;
   width: 30%;
@@ -305,12 +303,14 @@ a {
 
 
 .containerwhite {
-  float: right;
+  position: absolute;
+  margin: 95px;
+  right: -50;
   background-color: #9a3d3d;
   height: 400px;
   width: 700%;
   border-radius: 40px 0px 0px 40px;
-  margin: auto;
+  /* margin: auto; */
 }
 
 #footer {
