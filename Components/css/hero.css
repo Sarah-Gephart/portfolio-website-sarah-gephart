@@ -1,0 +1,82 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+    list-style: none;
+}
+  
+:root {
+--bg-color: #FFEDED;
+--button-color: #60C9C3;
+--main-color: #F45757;
+--text-color: #998E8E;
+--hover-color: white;
+}
+
+/* body {
+min-height: 100vh;
+background: var(--bg-color);
+color: var(--text-color);
+} */
+
+.main-hero {
+position: relative;
+background-color: var(--bg-color);
+height: 120%;
+min-width: 100%;
+padding: 120px;
+margin: 0;
+}
+
+/* Sarah Gephart */
+
+h2#sarah {
+font-family: 'Josefin Sans';
+font-style: normal;
+font-weight: 600;
+font-size: 40px;
+line-height: 40px;
+letter-spacing: 0.09em;
+color: var(--main-color);
+}
+
+/* UX/UI | LOGO DESIGN | CHARACTER ILLUSTRATOR */
+
+#occupation {
+font-family: 'Josefin Sans';
+font-style: normal;
+font-weight: 700;
+font-size: 18px;
+line-height: 18px;
+letter-spacing: 0.09em;
+}
+
+/* GRAPHIC DESIGNER */
+
+#title {
+font-family: 'Josefin Sans';
+font-style: normal;
+font-weight: 700;
+font-size: 90px;
+line-height: 90px;
+letter-spacing: 0.09em;
+width: 180px;
+color: #F45757;
+}
+
+.hero-image img {
+    position: relative;
+    top: 0px;
+    background-image: url ("img/heroimage.jpg");
+    width: 800px;
+    padding: 100px;
+}
+
+@media (max-width: 1390px) {
+    .hero-image img {
+        width: 100%;
+        transition: all .50s ease;
+    }
+}

@@ -2,103 +2,26 @@ body {
     font-size: 16px;
     font-family: "poppins";
     font-weight: 400;
+    max-width: 100vh;
+    /* overflow: hidden; */
 }
 
 main {
-  width: 1900px;
+  /* width: 100vh; */
 }
 
-@media screen and (max-width: 600px) {
+/* @media screen and (max-width: 600px) {
   body {
     
   }
-} 
+}  */
 
 
-.collapsible {
-  background-color: #eee;
-  color: #60C9C3;
-  cursor: pointer;
-  padding: 18px;
-  width: 100%;
-  border: none;
-  outline: none;
-  font-size: 15px;
-  
-}
-
-.active, .collapsible:hover {
-  background-color: #ccc;
-  height: fit-content;
-  width: fit-content;
-}
 
 .topnav {
-  background-color: #FFEDED;
-  overflow: hidden;
-  padding: 0 18px;
-  display: none;
-  
-}
-
-
-
-/* NAVBAR */
-
-.navbar-brand img {
-    width: 200px;
-}
-
-input{
-
-  display:none;
-
-}
-
-input:checked ~ label span:last-child{
-
-  display:none;
-
-}
-
-input:not(:checked) ~ label span:first-child{
-
- display:none;
-
-}
-
-.topnav{
-  overflow:hidden;
-}
-
-ul{
-
-  overflow:hidden;
-
-  width:0;
-
-  height:0;
-
-  padding:0;
-
-  margin:0;
-
-  transition:width 0.5s, height 0.5s;
-
-  list-style:none;
-
-}
-
-input:checked ~ ul{
-
-  width:200px;
-
-  height:90px;
-
-}
-
-
-/* .topnav {
+    /* position: absolute;
+    top: 0;
+    right: 0; */
     background-color: white;
     overflow: hidden;
     display: flex;
@@ -128,16 +51,18 @@ input:checked ~ ul{
     background-color: #F45757;
     color: white;
     border-radius: 100px;
-  } */
+  }
 
 
 /* MAIN HERO */
 
   .main-hero {
+    position: relative;
     background-color: #FFEDED;
-    background: fill;
     height: 609px;
+    width: 100%;
     padding: 75px;
+    margin: 0;
   }
 
   /* Sarah Gephart */
@@ -184,18 +109,23 @@ color: #F45757;
 }
 
 .hero-image img {
-  float: right;
-  width: 686px;
-  height: 457px;
+  min-width: 50%;
+  position: absolute;
+  background-image: url ("img/firstcarousel.jpg");
+  right: 0;
+  top: 0;
+  padding: 100px;
+  /* width: 686px;
+  height: 457px; */
 }
 
 /* PROJECTS */
 
 .projects .content-wrapper {
-    padding: 5%;
-    display: flex;
+    
+    /* display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: center; */
     
 }
 
@@ -204,13 +134,25 @@ color: #F45757;
     margin: 25px;
 }
 
-.cards {
+.designs {
     display: flex;
     flex-direction: row;
-    border: none;  
+    justify-content: space-around;
+
+    min-width: 0%;
+    height: auto;
+    border-radius: 40px;
+    border: none;
+    font-family: 'Josefin Sans';
+    text-decoration: none;
+    color: #000000;
+
+    /* display: flex;
+    flex-direction: row;
+    border: none;   */
 }
 
-.catproject img {
+/* .catproject img {
 
 background: url(Catproject.jpg);
 border-radius: 10%;
@@ -224,9 +166,10 @@ border-radius: 10%;
 .epictobias img {
 background: url(Tobiasproject.jpg);
 border-radius: 10%;
-}
+} */
 
 a {
+  border: none;
   font-family: 'Josefin Sans';
   text-decoration: none;
   color: #000000;
@@ -234,7 +177,7 @@ a {
 }
 
 .button {
-    
+    text-align: center;
     transition-duration: 0.4s;
     font-family: 'poppins';
     font-weight: 700;
@@ -308,7 +251,7 @@ a {
 }
 
 .contact .content-wrapper {
-  width: 100%;
+  width: 100vh;
   margin: 0px;
 }
 
@@ -316,7 +259,7 @@ a {
   position: relative;
   background-color: #F45757;
   height: 609px;
-  width: 30%;
+  /* width: 30%; */
   border-radius: 0px 40px 40px 0px;
 }
 
@@ -327,7 +270,7 @@ a {
   right: -50;
   background-color: #ffffff;
   height: 400px;
-  width: 700%;
+  /* width: 100%; */
   border-radius: 40px 0px 0px 40px;
   /* margin: auto; */
 }
@@ -337,7 +280,7 @@ a {
 }
 
 #footer {
-  min-width: 2000px;
+  /* width: 100vh; */
   background-color: #F8A1A1;
 }
 
